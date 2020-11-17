@@ -1,0 +1,22 @@
+{
+  "name": "food-hunter-backend",
+  "version": "1.0.0",
+  "description": "Restful API for food hunter application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiaochi-Li/food-hunter-backend.git"
+  },
+  "author": "Xiaochi Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xiaochi-Li/food-hunter-backend/issues"
+  },
+  "homepage": "https://github.com/Xiaochi-Li/food-hunter-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

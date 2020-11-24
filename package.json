@@ -7,7 +7,7 @@
         "test": "test",
         "start": "nodemon index.js",
         "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-        "precommit": "eslint .",
+        "lint": "eslint .",
         "lint:fix": "exlint --fix ."
     },
     "repository": {
@@ -29,5 +29,10 @@
         "eslint-config-prettier": "^6.15.0",
         "husky": "^4.3.0",
         "prettier": "^2.2.0"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run lint && npm run format"
+      }
     }
 }

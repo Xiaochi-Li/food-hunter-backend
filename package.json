@@ -1,23 +1,33 @@
 {
-  "name": "food-hunter-backend",
-  "version": "1.0.0",
-  "description": "Restful API for food hunter application",
-  "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Xiaochi-Li/food-hunter-backend.git"
-  },
-  "author": "Xiaochi Li",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Xiaochi-Li/food-hunter-backend/issues"
-  },
-  "homepage": "https://github.com/Xiaochi-Li/food-hunter-backend#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "food-hunter-backend",
+    "version": "1.0.0",
+    "description": "Restful API for food hunter application",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "start": "nodemon index.js",
+        "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+        "precommit": "eslint .",
+        "lint:fix": "exlint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Xiaochi-Li/food-hunter-backend.git"
+    },
+    "author": "Xiaochi Li",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Xiaochi-Li/food-hunter-backend/issues"
+    },
+    "homepage": "https://github.com/Xiaochi-Li/food-hunter-backend#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.14.0",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^6.15.0",
+        "husky": "^4.3.0",
+        "prettier": "^2.2.0"
+    }
 }
